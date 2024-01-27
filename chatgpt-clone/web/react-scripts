@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "react-scripts start --public-url=/web",
+    "build": "react-scripts build --public-url=/web",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
