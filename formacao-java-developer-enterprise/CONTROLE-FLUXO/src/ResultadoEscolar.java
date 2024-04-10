@@ -1,17 +1,17 @@
+// Cenário 1
+// public class ResultadoEscolar {
+// 	public static void main(String[] args) {
+// 		int nota = 5;
+// 		String resultado = nota >=7 ? "Aprovado" : "Reprovado";
+// 		System.out.println(resultado);
+// 	}
+// }
+
+// Cenário 2
 public class ResultadoEscolar {
-
-    public static void main(String[] args) {
-
-        int nota = 10;
- 
-        if(nota >= 7) // Sempre retorna true
-         System.out.println("Aprovado");
-
-        else if(nota >=5 && nota <7) // Retorna true or false
-        System.out.println("Prova Recuperação");
- 
-        else
-         System.out.println("Reprovado");
-     }
-    
+	public static void main(String[] args) {
+		int nota = 6;
+		String resultado = nota >=7 ? "Aprovado" : nota >=5 && nota <7 ? "Recuperação" : "Reprovado";
+		System.out.println(resultado);
+	}
 }
