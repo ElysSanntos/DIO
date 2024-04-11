@@ -17,36 +17,36 @@ public class Cozinheiro {
 		adicionarLancheNoBalcao();
 		adicionarSucoNoBalcao();
 	}
-	private void prepararLanche() {
+	public void prepararLanche() {
 		System.out.println("PREPARANDO LANCHE TIPO HAMBÚRGUER");
 	}
-	private void prepararVitamina() {
+	public void prepararVitamina() {
 		System.out.println("PREPARANDO SUCO");
 	}
-	private void prepararCombo() {
+	public void prepararCombo() {
 		prepararLanche();
 		prepararVitamina();
 	}
-	private void selecionarIngredientesLanche() {
+	public void selecionarIngredientesLanche() {
 		System.out.println("SELECIONADO O PÃO, SALADA, OVO E CARNE");
 	}
-	private void selecionarIngredientesVitamina() {
+	public void selecionarIngredientesVitamina() {
 		System.out.println("SELECIONADO FRUTA, LEITE E SUCO");
 	}
-	private void lavarIngredientes() {
+	public void lavarIngredientes() {
 		System.out.println("LAVANDO INGREDIENTES");
 	}
-	private void baterVitaminaLiquidificador() {
+	public void baterVitaminaLiquidificador() {
 		System.out.println("BATENDO VITAMINA NO LIQUIDIFICADOR");
 	}
-	private void fritarIngredientesLanche() {
+	public void fritarIngredientesLanche() {
 		System.out.println("FRITANDO A CARNE E OVO PARA O HAMBÚRGUER");
 	}
 	
-	private void pedirParaTrocarGas(Almoxarife meuAmigo) {
+	public void pedirParaTrocarGas(Almoxarife meuAmigo) {
 		meuAmigo.trocarGas();
 	}
-	private void pedirIngredientes(Almoxarife almoxarife) {
+	public void pedirIngredientes(Almoxarife almoxarife) {
 		almoxarife.entregarIngredientes();
 	}
 }

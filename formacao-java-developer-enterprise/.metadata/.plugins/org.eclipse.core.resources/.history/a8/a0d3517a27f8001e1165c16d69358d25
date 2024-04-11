@@ -23,7 +23,7 @@ public class Cozinheiro {
 	private void prepararVitamina() {
 		System.out.println("PREPARANDO SUCO");
 	}
-	private void prepararCombo() {
+	public void prepararCombo() {
 		prepararLanche();
 		prepararVitamina();
 	}
