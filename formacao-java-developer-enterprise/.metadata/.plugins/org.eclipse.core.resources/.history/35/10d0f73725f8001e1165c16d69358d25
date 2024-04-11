@@ -2,6 +2,7 @@ package com.lanchonete;
 
 import com.lanchonete.area.cliente.Cliente;
 import com.lanchonete.atendimento.cozinha.Almoxarife;
+import com.lanchonete.atendimento.cozinha.Atendente;
 import com.lanchonete.atendimento.cozinha.Cozinheiro;
 
 public class Estabelecimento {
@@ -24,7 +25,10 @@ public class Estabelecimento {
 		//ações que não precisam estarem disponíveis para toda a aplicação
 		almoxarife.controlarEntrada();
 		almoxarife.controlarSaida();
-				
+		//ação que somente o seu pacote cozinha precisa conhecer (default)
+		almoxarife.entregarIngredientes();
+		almoxarife.trocarGas();
+		
 		Atendente atendente = new Atendente();
 		atendente.pegarLancheCozinha();
 		atendente.receberPagamento();
@@ -45,7 +49,7 @@ public class Estabelecimento {
 		cliente.consultarSaldoAplicativo();
 		
 		//já pensou os clientes ouvindo que o gás acabou ?
-		
+		cozinheiro.pedirParaTrocarGas(atendente);
 		cozinheiro.pedirParaTrocarGas(almoxarife);
 		
 	}

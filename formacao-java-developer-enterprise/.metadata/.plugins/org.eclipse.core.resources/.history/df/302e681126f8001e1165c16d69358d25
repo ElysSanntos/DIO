@@ -11,7 +11,7 @@ public class Atendente {
 	public void receberPagamento() {
 		System.out.println("RECEBENDO PAGAMENTO");
 	}
-	 void trocarGas() {
+	public void trocarGas() {
 		System.out.println("ATENDENTE TROCANDO O GÁS");
 	}
 	public void pegarPedidoBalcao() {
