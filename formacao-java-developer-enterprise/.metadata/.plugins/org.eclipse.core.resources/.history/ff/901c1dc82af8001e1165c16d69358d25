@@ -16,7 +16,9 @@ public class Estabelecimento {
 		Atendente atendente = new Atendente();
 		atendente.servindoMesa();
 		atendente.receberPagamento();
-	
+		
+		//ação que somente o seu pacote cozinha precisa conhecer (default)
+		atendente.trocarGas();
 		
 		Cliente cliente = new Cliente();
 		cliente.escolherLanche();
