@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module exemplo_pacotes {
-}
