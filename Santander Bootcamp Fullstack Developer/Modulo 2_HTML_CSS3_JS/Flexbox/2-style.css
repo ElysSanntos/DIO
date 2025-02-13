@@ -1,0 +1,52 @@
+.flex-container-row {
+    display: flex;
+    height: 150px;
+    border: 2px solid black;
+    max-width: 300px;
+    flex-direction: row;
+}
+
+.flex-container-column {
+    display: flex;
+    height: 150px;
+    border: 2px solid black;
+    max-width: 300px;
+    flex-direction: column;
+}
+
+.item {
+    font-size: 24x;
+    height: 50%;
+    text-align: center;
+    min-width: 100px;
+    line-height: 50px;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.blue {
+    background-color: blueviolet;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.orange {
+    background-color: orangered;
+}

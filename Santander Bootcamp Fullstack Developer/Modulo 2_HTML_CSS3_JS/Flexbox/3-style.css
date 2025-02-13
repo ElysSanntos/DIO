@@ -1,0 +1,70 @@
+.flex-container-row {
+    display: flex;
+    border: 1px solid blue;
+    max-width: 500px;
+}
+
+.flex-container-column {
+    display: flex;
+    border: 2px double rebeccapurple;
+    max-width: 300px;
+    height: 200px;
+}
+
+.default {
+    flex-flow: row nowrap;
+}
+
+.default-column {
+    flex-flow: column nowrap;
+}
+
+.wrap {
+    flex-flow: row wrap;
+}
+
+.wrap-column {
+    flex-flow: column wrap;
+}
+
+.wrap-reverse {
+    flex-flow: row wrap-reverse;
+}
+
+.wrap-reverse-column {
+    flex-flow: column wrap-reverse;
+}
+
+.r-nowrap {
+    flex-flow: row-reverse nowrap;
+}
+
+.r-nowrap-column {
+    flex-flow: column-reverse nowrap;
+}
+
+.r-wrap {
+    flex-flow: row-reverse wrap;
+}
+
+.r-wrap-column {
+    flex-flow: column-reverse wrap;
+}
+
+.rr-wrap {
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.rr-wrap-column {
+    flex-flow: column-reverse wrap-reverse;
+}
+
+.item {
+    background-color: burlywood;
+    margin: 5px;
+    color: blueviolet;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}

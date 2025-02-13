@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="9-style.css">
+    <title>Fundamentos - Flex-Shrink</title>
+</head>
+
+<body>
+    <h3>Flex-Shrink: 1</h3>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <h3>Flex-Shrink: 1</h3>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">Lorem ipsum dolor sit amet consectetur</div>
+    </div>
+
+    <h3>Flex-Shrink: 0 - basis: 100px</h3>
+    <p>Estou dizendo aos itens que não permito a diminuição, acrescentando flex-basis de 100px, estou dizendo que ele terá o minimo de 100px de width, porem eu não permito a quebra dos/compressão dos itens. Assim o flex-grow, não será respeitado em 1, assim
+        os itens vazam do container</p>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+    <h3>Flex-Shrink: mix / basis: 100px</h3>
+    <p>Temos itens e conteúdos diferentes, e estou dizendo coisas diferentes para cada um deles:</p>
+    <ul>
+        <li>Itens com s-2, podem ser comprimidos 2x, tal qual seja possivel. Com basis de 100px, digo que ele tem o tamanho de 100, tentando definir a compressão em 2x, então ele tentará agrupar de modo a caber dentro do container</li>
+    </ul>
+
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">B</div>
+        <div class="item s-2 fg-1">C</div>
+        <div class="item s-3 fg-1">Lorem ipsum dolor sit amet consectetur</div>
+    </div>
+</body>
+
+</html>

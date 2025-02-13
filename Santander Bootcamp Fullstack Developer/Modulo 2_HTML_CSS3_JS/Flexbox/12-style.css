@@ -1,0 +1,48 @@
+  .flex-container {
+      display: flex;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      margin: 10px;
+      /* align-items: center; */
+  }
+  
+  .align-container {
+      align-items: center;
+  }
+  
+  .item {
+      background-color: rgb(177, 136, 153);
+      color: rgb(56, 6, 102);
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+      flex: 1;
+  }
+  
+  .center {
+      align-self: center;
+  }
+  
+  .start {
+      align-self: flex-start;
+  }
+  
+  .end {
+      align-self: flex-end;
+  }
+  
+  .baseline {
+      align-self: baseline;
+  }
+  
+  .stretch {
+      align-self: stretch;
+  }
+  
+  .auto {
+      align-self: auto;
+  }
+  
+  .direction {
+      flex-direction: column;
+  }

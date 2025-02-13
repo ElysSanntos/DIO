@@ -1,0 +1,38 @@
+.container {
+    max-width: 400px;
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.item {
+    background-color: rgb(226, 160, 37);
+    margin: 5px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}

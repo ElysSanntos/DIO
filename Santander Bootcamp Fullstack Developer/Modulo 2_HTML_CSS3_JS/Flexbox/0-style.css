@@ -1,0 +1,11 @@
+.flex {
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid blanchedalmond;
+    display: flex;
+}
+
+.item {
+    background-color: rgb(194, 159, 226);
+    margin: 5px;
+}

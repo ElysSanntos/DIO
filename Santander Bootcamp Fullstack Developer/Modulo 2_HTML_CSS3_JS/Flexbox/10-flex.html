@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10-style.css">
+    <title>Fundamentos - Flex-Shrink</title>
+</head>
+
+<body>
+    <h3>Flex: 1</h3>
+    <p>Quando usamos o flex:1</p>
+    <dl>
+        <dt>Grow = 1</dt>
+        <dd>Espaçamento laterais do conteúdo será respeitado</dd>
+        <dt>Shrink = 1</dt>
+        <dd>Compressão máxima do elemento será 1x seu tamanho</dd>
+        <dt>Basis = 0</dt>
+        <dd>Não haverá quebra/diminuição do item, e meu width será ignorado</dd>
+    </dl>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">BBB</div>
+        <div class="item flex-1">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+    </div>
+    <h3>Flex: MIX</h3>
+    <p>Quando usamos o flex:2</p>
+    <dl>
+        <dt>Grow = 2</dt>
+        <dt>Shrink = 1</dt>
+        <dt>Basis = 0</dt>
+
+    </dl>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">BBB</div>
+        <div class="item flex-2">CC</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">EF</div>
+    </div>
+
+    <h3>Width ignorado - Basis = 0</h3>
+    <p>Na classe largura, a principio temos um widht: 200px, e nada é alterado.</p>
+    <p>Quando adicionamos o min-width: 250px, então o basis tenta atender ao tamanho minímo definido, e então ocorre o vazamento do item </p>
+    <div class="flex-container">
+        <div class="item flex-1 largura">A</div>
+        <div class="item flex-1 largura">BBB</div>
+        <div class="item flex-1 largura">CC</div>
+        <div class="item flex-1 largura">D</div>
+        <div class="item flex-1 largura">EF</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

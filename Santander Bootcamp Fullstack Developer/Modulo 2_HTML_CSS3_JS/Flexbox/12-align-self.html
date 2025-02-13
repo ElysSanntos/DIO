@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="12-style.css">
+    <title>Fundamentos - Flex-Shrink</title>
+</head>
+
+<body>
+
+    <h1>Row</h1>
+    <h3>Align-Self - auto</h3>
+    <p>Se definir um align-items: center no container, mesmo tendo um align-self: auto definido, será respeitado o que vem do container</p>
+    <div class="flex-container align-container">
+
+        <div class="item auto">Item 01</div>
+        <div class="item auto">Item 02</div>
+        <div class="item auto">Item 03</div>
+        <div class="item auto">Item 04</div>
+    </div>
+
+    <h3>Align-Self - mix</h3>
+    <div class="flex-container">
+        <div class="item center">Item 01</div>
+        <div class="item start">Item 02</div>
+        <div class="item end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore .</div>
+        <div class="item auto">Item 04</div>
+    </div>
+
+    <h3>Align-Self - mix - vazamento</h3>
+    <div class="flex-container">
+        <div class="item center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+        <div class="item start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+        <div class="item end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore.</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+    </div>
+
+
+    <h1>Column</h1>
+    <h3>Align-Self - auto</h3>
+    <p>Se definir um align-items: center no container, mesmo tendo um align-self: auto definido, será respeitado o que vem do container</p>
+    <div class="flex-container align-container direction">
+
+        <div class="item auto">Item 01</div>
+        <div class="item auto">Item 02</div>
+        <div class="item auto">Item 03</div>
+        <div class="item auto">Item 04</div>
+    </div>
+
+    <h3>Align-Self - mix</h3>
+    <div class="flex-container direction">
+        <div class="item center">Item 01</div>
+        <div class="item start">Item 02</div>
+        <div class="item end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore .</div>
+        <div class="item auto">Item 04</div>
+    </div>
+
+    <h3>Align-Self - mix - vazamento</h3>
+    <div class="flex-container direction">
+        <div class="item center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+        <div class="item start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+        <div class="item end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore.</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aspernatur facere, qui molestias saepe inventore</div>
+    </div>
+
+
+</body>
+
+</html>

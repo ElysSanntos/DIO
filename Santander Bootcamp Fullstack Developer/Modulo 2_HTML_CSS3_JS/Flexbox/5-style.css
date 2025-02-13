@@ -1,0 +1,51 @@
+.container {
+    max-width: 350px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.item {
+    background-color: rgb(224, 211, 236);
+    margin: 5px;
+    color: rgb(158, 100, 13);
+    text-align: center;
+    flex: 1;
+}
+
+.flex {
+    flex: 1;
+}
+
+.center {
+    align-items: center;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.central {
+    height: 300px;
+    justify-content: center;
+}
+
+.central .item {
+    flex: 0;
+    padding: 20px;
+}
