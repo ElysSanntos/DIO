@@ -14,6 +14,7 @@
 ---
 
 ## 🏷️ O que é ORM?
+![images](../assetss/OQuEORM.png)
 
 **ORM (Object-Relational Mapping)**, ou **Mapeamento Objeto-Relacional**, é um recurso que visa simplificar a interação entre o paradigma da Orientação a Objetos (OO) e os bancos de dados relacionais. Em vez de escrever SQL manualmente, o ORM permite que objetos Java sejam automaticamente mapeados para tabelas no banco de dados.
 
@@ -31,9 +32,8 @@
 A **Java Persistence API (JPA)** é uma especificação em Java para a persistência de dados em bancos de dados relacionais, utilizando o conceito de ORM. A JPA facilita o gerenciamento de dados e a persistência de objetos Java, permitindo realizar operações de **CRUD** (Criar, Ler, Atualizar, Excluir) em objetos.
 
 ### 📌 Especificações e Implementações
+![images](../assetss/JPA.png)
 JPA é apenas uma especificação, ou seja, define um conjunto de regras. **Hibernate** é uma das implementações mais populares de JPA. Outras implementações incluem **EclipseLink** e **OpenJPA**.
-
-![Logo JPA](https://via.placeholder.com/400x100?text=Logo+JPA)
 
 ---
 
@@ -49,6 +49,7 @@ JPA é apenas uma especificação, ou seja, define um conjunto de regras. **Hibe
 ---
 
 ## 🔄 Como o ORM funciona?
+![images](../assetss/EntityManager.png)
 
 O **ORM** permite que a conversão entre **objetos Java** e **tabelas SQL** seja realizada automaticamente, poupando o desenvolvedor da necessidade de manipular SQL diretamente.
 
@@ -62,6 +63,7 @@ O **ORM** permite que a conversão entre **objetos Java** e **tabelas SQL** seja
 ---
 
 ## 🏗️ Estrutura de uma Classe de Modelo em JPA
+![images](../assetss/Mapeamento.png)
 
 ### Exemplo de Classe de Modelo:
 ```java
