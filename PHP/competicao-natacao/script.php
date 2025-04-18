@@ -11,6 +11,26 @@ $categorias[] = "Idoso";
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 
+if(empty($nome)){
+    echo '⚠️ O nome não pode ser vazio.';
+    return;
+}
+
+if(strlen($nome) < 3 ){
+    echo '⚠️ O nome não pode conter menos de 3 caracteres.';
+    return;
+}
+
+if(strlen($nome) > 20){
+    echo '⚠️ O nome é muito extenso';
+    return;
+}
+
+if (!is_numeric($idade)) {
+    echo "⚠️ A idade deve ser um número.";
+    return;
+}
+
 // print_r($nome);
 // var_dump($idade);
 // return 0;
