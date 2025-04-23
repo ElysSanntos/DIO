@@ -12,15 +12,24 @@ session_start();
     <meta name="viewreport" content="width=device.width, initial.scale=1" />
 </head>
 <body>
+
     <h2>Formulário de Inscrição</h2>
 
     <form action="script.php" method="post">
         <?php
-        $mensagemDeErro = isset($_SESSION['mensagem de erro']) ? $_SESSION['mensagem de erro']: '';
-        if(!empty($mensagemDeErro)){
+         $mensagemDeSucesso = isset($_SESSION['mensagem-de-sucesso']) ? $_SESSION['mensagem-de-sucesso'] : '';
+        if(!empty($mensagemDeSucesso)){
+            echo $mensagemDeSucesso;
+
+        }
+        $mensagemDeErro = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : '';
+        if(!empty($mensagemDeErro))
+        {
             echo $mensagemDeErro;
         }
         ?>
+
+        
         <label >Nome:</label>
         <input type="text" name="nome"><br><br>
 
@@ -28,6 +37,7 @@ session_start();
         <input type="text" name="idade"><br><br>
 
         <input type="submit" value="Enviar">
+       
     </form>
 </body>
 </html>
