@@ -3,7 +3,6 @@
 ---
 
 ### 🔹 Aula 01 – Introdução a funções em PHP  
-📺 *Arquivo de áudio: 48.wav*
 
 #### 🧩 Tópicos abordados:
 - Revisão do uso de sessões e validações anteriores.

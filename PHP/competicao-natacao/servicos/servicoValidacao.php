@@ -17,12 +17,11 @@ function validaNome(string $nome): bool
     return true;
 }
 
-function validaIdade(string $idade)
+function validaIdade(string $idade) : bool
 {
 
     if (!is_numeric($idade)) {
         $_SESSION['mensagem-de-erro'] = 'A idade deve ser um numero';
-        header('location: index.php');
         return false;
 
     if($idade >= 6 && $idade <= 12)
@@ -32,7 +31,6 @@ function validaIdade(string $idade)
             if($categorias[$i] == 'infantil')
             {
                 $_SESSION['mensagem-de-sucesso'] =  "O nadador ".$nome. " compete na categoria " .$categorias[$i];
-                header("location: index.php");
                 return;
             }
         }
@@ -44,7 +42,6 @@ function validaIdade(string $idade)
             if($categorias[$i] == 'adolescente')
             {
                 $_SESSION['mensagem-de-sucesso'] =  "O nadador ".$nome. " compete na categoria " .$categorias[$i];
-                header("location: index.php");
                 return;
             }
         }
@@ -56,7 +53,6 @@ function validaIdade(string $idade)
             if($categorias[$i] == 'adulto')
             {
                 $_SESSION['mensagem-de-sucesso'] =  "O nadador ".$nome. " compete na categoria " .$categorias[$i];
-                header("location: index.php");
                 return;
             }
         }
