@@ -1,43 +1,40 @@
 <?php
-session_start();
+include "servicos/servicoMensagemSessao.php";
 ?>
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Formulário para inscrição de Competidores</title>
-    <meta name="author" content="" />
-    <meta name= "description" content="" />
-    <meta name="viewreport" content="width=device.width, initial.scale=1" />
+    <meta charset="utf-8">
+    <title>Formulário de inscrição</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
-    <h2>Formulário de Inscrição</h2>
+<p>FORMULÁRIO PARA INSCRIÇÃO DE COMPETIDORES</p>
 
-    <form action="script.php" method="post">
-        <?php
-         $mensagemDeSucesso = isset($_SESSION['mensagem-de-sucesso']) ? $_SESSION['mensagem-de-sucesso'] : '';
-        if(!empty($mensagemDeSucesso)){
+<form action="script.php" method="post">
+    <?php
+        $mensagemDeSucesso = obterMensagemSucesso();
+        if(!empty($mensagemDeSucesso))
+        {
             echo $mensagemDeSucesso;
-
         }
-        $mensagemDeErro = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : '';
+
+        $mensagemDeErro = obterMensagemErro();
         if(!empty($mensagemDeErro))
         {
             echo $mensagemDeErro;
         }
-        ?>
+    ?>
+    <p>Seu nome: <input type="text" name="nome" /></p>
+    <p>Sua idade: <input type="text" name="idade" /></p>
+    <p><input type="submit" value="Enviar dados do competidor"/></p>
+</form>
 
-        
-        <label >Nome:</label>
-        <input type="text" name="nome"><br><br>
-
-        <label>Idade:</label>
-        <input type="text" name="idade"><br><br>
-
-        <input type="submit" value="Enviar">
-       
-    </form>
 </body>
+
 </html>
