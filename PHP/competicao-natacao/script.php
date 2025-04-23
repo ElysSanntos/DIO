@@ -13,24 +13,24 @@ $categorias[] = "Idoso";
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 
-if(empty($nome)){
-$_SESSION['mensagem de ERRO'] = 'O nome não pode ser vazio';
-    return;
+if (empty($nome)) {
+    $_SESSION['mensagem de ERRO'] = 'O nome não pode ser vazio';
+    header('index.php');
 }
 
-if(strlen($nome) < 3 ){
-    echo '⚠️ O nome não pode conter menos de 3 caracteres.';
-    return;
+if (strlen($nome) < 3) {
+    $_SESSION['mensagem de ERRO'] = 'O nome não pode conter menos de 3 caracteres';
+    header('index.php');
 }
 
-if(strlen($nome) > 20){
-    echo '⚠️ O nome é muito extenso';
-    return;
+if (strlen($nome) > 20) {
+    $_SESSION['mensagem de ERRO'] = 'O nome é muito extenso';
+    header('index.php');
 }
 
 if (!is_numeric($idade)) {
-    echo "⚠️ A idade deve ser um número.";
-    return;
+    $_SESSION['mensagem de ERRO'] = 'A idade deve ser um numero';
+    header('index.php');
 }
 
 // print_r($nome);
@@ -51,3 +51,6 @@ for ($i = 0; $i <= count($categorias) - 1; $i++) {
         echo "O nadador $nome compete na categoria idoso";
     }
 }
+
+?>
+
