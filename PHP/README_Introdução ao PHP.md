@@ -61,12 +61,63 @@ Aprender os fundamentos do PHP, compreendendo sua sintaxe, estrutura de controle
 - Aplicação de condicionais com arrays e validações
 
 ---
-
-## ✅ Quiz Resolvido: Introduzindo Condicionais
-
-Veja todas as perguntas com gabarito e explicações
+### 🔹 Aula 05 – Introdução a verbos HTTP para formulários  
+📺 [Assista no YouTube](https://youtu.be/AQFG3RAoNQY)  
+- Conceito de verbos HTTP  
+- Diferença entre GET e POST  
+- Boas práticas no uso de formulários  
 
 ---
+
+### 🔹 Aula 06 – Implementando técnicas de validação de dados  
+📺 [Assista no YouTube](https://youtu.be/ioqHnIxVqB4)  
+- Uso das funções `empty()` e `strlen()`  
+- Validação de campos obrigatórios  
+- Feedback visual e lógico no formulário  
+
+---
+
+### 🔹 Aula 07 – Finalizando a validação do formulário com mensagens de erro  
+📺 [Assista no YouTube](https://youtu.be/y-v--3xnRho)  
+- Exibição de mensagens de erro  
+- Uso do `is_numeric()`  
+- Boas práticas com versionamento no Git  
+
+---
+
+### 🔹 Aula 08 – Requisição e resposta na web com PHP  
+📺 [Assista no YouTube](https://youtu.be/XEAIL3t1yeE)  
+- Funcionamento do ciclo requisição-resposta  
+- Persistência e consistência nos dados enviados  
+- Uso prático em formulários PHP  
+
+---
+
+### 🔹 Aula 09 – Persistência de estado com sessões  
+📺 [Assista no YouTube](https://youtu.be/G7qStGXS5wk)  
+- Uso do `session_start()`  
+- Armazenamento e recuperação com `$_SESSION`  
+- Boas práticas com sessões e operadores ternários  
+
+---
+
+### 🔹 Aula 10 – Operador ternário e validação da sessão  
+📺 [Assista no YouTube](https://youtu.be/g5ZlTaQVtLA)  
+- Sintaxe do operador ternário  
+- Validação de variáveis de sessão  
+- Código limpo com lógica enxuta  
+
+---
+
+### 🔹 Aula 11 – Normalizando o fluxo de condições com PHP  
+📺 [Assista no YouTube](https://youtu.be/T0GDSP3akng)  
+- Estruturação de validações em etapas  
+- Uso correto de condições aninhadas  
+- Exercícios com quizzes e boas práticas  
+
+---
+
+
 
 ## 💡 Observações
 
