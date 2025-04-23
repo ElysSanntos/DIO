@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,6 +15,9 @@
     <h2>Formulário de Inscrição</h2>
 
     <form action="script.php" method="post">
+        <?php
+        $mensagemDeErro = isset($_SESSION['mensagem de erro']) ? $_SESSION['mensagem de erro']: '';
+        ?>
         <label >Nome:</label>
         <input type="text" name="nome"><br><br>
 
